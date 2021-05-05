@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color:hsl(233, 47%, 7%) ; 
+   display: grid;
+   place-items: center;
+   font-family: 'Inter', sans-serif;
+}
+
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+p span{
+    display: block;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1rem;
+}
+
+.container{
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    margin: 10%;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+}
+
+.left-contents{
+    padding: 4rem;
+    width: 540px;
+    height: 446px;
+}
+
+.heading{
+    font-size: 2rem;
+    color: hsl(0, 0%, 100%);
+    
+}
+
+.contents{
+    padding: 2rem 0;
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    width: 90%;
+}
+
+.ranks{
+    text-transform: uppercase;
+    width: 90%;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.6;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+
+.right-contents{
+    position:relative;
+}
+
+.img{
+    border-right: 1px solid transparent;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.img-mobile{
+    display: none;
+}
+
+.right-contents::before{
+    content: "";
+    background-color: hsl(277, 75%, 30%);
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-right: 1px solid transparent;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media screen and (max-width: 500px){
+  .img{display: none;}
+
+  .img-mobile{
+    display: block;
+    width:100%;
+    border: 1px solid transparent;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+   }
+
+   .right-contents::before{
+    border: 1px solid transparent;
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+   }
+
+   .heading{
+    font-size: 1.6rem;
+  }
+
+  .container{
+      display: flex;
+      flex-direction: column;
+      margin: 10%;
+      
+  }
+
+  .left-contents{
+    text-align: center;
+    order: 2;
+    padding: 2rem 1rem;
+    width: 90%;
+    height: fit-content;
+  }
+
+   .contents{
+    width: 100%;
+    font-size: medium;
+  }
+   
+  .ranks{
+   width: 100%;
+   display: block;
+   font-size: 1em;
+  }
+  .ranks p{padding-bottom: .8rem;}
+}
