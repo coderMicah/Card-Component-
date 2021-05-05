@@ -22,14 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](.images/card-component.jpg)
 
 
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [card-component-micah.netlify.app/](https://card-component-micah.netlify.app/)
 
 ## My process
 
@@ -41,6 +39,6 @@ Users should be able to:
 - CSS Grid
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@coderMicah](https://www.frontendmentor.io/profile/coderMicah)
 - Twitter - [@_micahcodes](https://www.twitter.com/_micahcodes)
 
